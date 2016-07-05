@@ -126,6 +126,7 @@
     <Compile Include="Models\Medico.cs">
       <DependentUpon>ModeloDeDados.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\MedicoMetadado.cs" />
     <Compile Include="Models\ModeloDeDados.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

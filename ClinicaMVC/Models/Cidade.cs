@@ -11,7 +11,7 @@ namespace ClinicaMVC.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
     public partial class Cidade
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,7 +19,7 @@ namespace ClinicaMVC.Models
         {
             this.Medico = new HashSet<Medico>();
         }
-    
+        [Key]
         public int IDCidade { get; set; }
         public string Nome { get; set; }
     

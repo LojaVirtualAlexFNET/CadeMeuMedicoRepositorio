@@ -11,9 +11,10 @@ namespace ClinicaMVC.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
     public partial class Especialidade
     {
+        [Key]
         public int IDEspecialidade { get; set; }
         public string Nome { get; set; }
     }

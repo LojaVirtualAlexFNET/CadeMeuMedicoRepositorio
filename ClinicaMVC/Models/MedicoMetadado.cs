@@ -9,9 +9,13 @@ namespace ClinicaMVC.Models
 {
     public class MedicoMetadado
     {
+        [MetadataType(typeof(MedicoMetadado))]
+        public partial class Medico
+        {
+        }
         [Required(ErrorMessage = "Obrigatório informar o CRM")]
         [StringLength(30, ErrorMessage = "O CRM deve possuir no máximo 30 caracteres")]
-public string CRM { get; set; }
+        public string CRM { get; set; }
         [Required(ErrorMessage = "Obrigatório informar o Nome")]
         [StringLength(80, ErrorMessage = "O Nome deve possuir no máximo 80 caracteres")]
         public string Nome { get; set; }
@@ -24,5 +28,15 @@ public string CRM { get; set; }
         [Required(ErrorMessage = "Obrigatório informar o E-mail")]
         [StringLength(100, ErrorMessage = "O E-mail deve possuir no máximo 100 caracteres")]
         public string Email { get; set; }
+        [Required(ErrorMessage = "Obrigatório informar se Atende por Convênio")]
+        public bool AtendePorConvenio { get; set; }
+        [Required(ErrorMessage = "Obrigatório informar se Tem Clínica")]
+        public bool TemClinica { get; set; }
+        [StringLength(80, ErrorMessage = "O Website deve possuir no máximo 80 caracteres")]
+        public string WebsiteBlog { get; set; }
+        [Required(ErrorMessage = "Obrigatório informar a Cidade")]
+        public int IDCidade { get; set; }
+        [Required(ErrorMessage = "Obrigatório informar a Especialidade")]
+        public int IDEspecialidade { get; set; }
     }
 }

@@ -120,9 +120,11 @@
     <Compile Include="Models\Cidade.cs">
       <DependentUpon>ModeloDeDados.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\CidadeMetadado.cs" />
     <Compile Include="Models\Especialidade.cs">
       <DependentUpon>ModeloDeDados.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\EspecialidadeMetadado.cs" />
     <Compile Include="Models\Medico.cs">
       <DependentUpon>ModeloDeDados.tt</DependentUpon>
     </Compile>
@@ -145,6 +147,7 @@
     <Compile Include="Models\Usuario.cs">
       <DependentUpon>ModeloDeDados.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\UsuarioMetadado.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

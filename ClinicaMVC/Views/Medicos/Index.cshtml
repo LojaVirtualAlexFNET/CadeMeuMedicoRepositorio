@@ -7,7 +7,7 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Adicionar Novo Médico", "Adicionar")
 </p>
 <table class="table">
     <tr>
@@ -15,14 +15,16 @@
         <th>
             @Html.DisplayNameFor(model => model.Nome)
         </th>
+        
         <th>
-        <th>
-            @Html.DisplayNameFor(model => model.IDCidade)
+            Cidade
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.IDEspecialidade)
+            Especialidade
         </th>
-        <th></th>
+        <th>
+            Opções
+        </th>
     </tr>
 
     @foreach (var item in Model)
@@ -33,15 +35,15 @@
                 @Html.DisplayFor(modelItem => item.Nome)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IDCidade)
+                @Html.DisplayFor(modelItem => item.Cidade.Nome)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IDEspecialidade)
+                @Html.DisplayFor(modelItem => item.Especialidade.Nome)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Editar", "Editar", new {  id=item.IDMedico }) |
+                @Html.ActionLink("Details", "Detalhes", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "excluir", new { /* id=item.PrimaryKey */ })
             </td>
         </tr>
     }

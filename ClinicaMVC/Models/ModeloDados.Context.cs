@@ -13,10 +13,10 @@ namespace ClinicaMVC.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CadeMeuMedicoBDEntities : DbContext
+    public partial class CadeMeuMedicoBDEntities2 : DbContext
     {
-        public CadeMeuMedicoBDEntities()
-            : base("name=CadeMeuMedicoBDEntities")
+        public CadeMeuMedicoBDEntities2()
+            : base("name=CadeMeuMedicoBDEntities2")
         {
         }
     
@@ -25,9 +25,9 @@ namespace ClinicaMVC.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Cidade> Cidade { get; set; }
-        public virtual DbSet<Especialidade> Especialidade { get; set; }
-        public virtual DbSet<Medico> Medico { get; set; }
-        public virtual DbSet<Usuario> Usuario { get; set; }
+        public virtual DbSet<Cidade> Cidades { get; set; }
+        public virtual DbSet<Especialidade> Especialidades { get; set; }
+        public virtual DbSet<Medico> Medicos { get; set; }
+        public virtual DbSet<Usuario> Usuarios { get; set; }
     }
 }

@@ -13,6 +13,7 @@ public    class CidadeMetadado
         public partial class Cidade
         {
             [Required(ErrorMessage ="Digite a Cidade")]
+            public string Nome { get; set; }
         }
     }
 }

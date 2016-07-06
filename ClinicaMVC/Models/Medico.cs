@@ -27,5 +27,6 @@ namespace ClinicaMVC.Models
         public int IDEspecialidade { get; set; }
     
         public virtual Cidade Cidade { get; set; }
+        public virtual Especialidade Especialidade { get; set; }
     }
 }

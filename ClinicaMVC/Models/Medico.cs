@@ -11,12 +11,10 @@ namespace ClinicaMVC.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
+    
     public partial class Medico
     {
-
         public long IDMedico { get; set; }
-        [Required(ErrorMessage ="Obrigatorio")]
         public string CRM { get; set; }
         public string Nome { get; set; }
         public string Endereco { get; set; }

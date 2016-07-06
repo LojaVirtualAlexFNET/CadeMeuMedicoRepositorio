@@ -1,0 +1,21 @@
+﻿@using ClinicaMVC.Models;
+
+
+@helper RetornaDoisBannersMaisRecentes()
+{
+var banco = new ClinicaMVC.Models.CadeMeuMedicoBDEntities2();
+var banners = banco.BannersPublicitarios.OrderByDescending(b => b.IDBanner).Take(2);
+    <div style="width:100%; text-align:left; border:1px solid #ff6a00; padding:10px; display:inline-block">
+
+        @foreach (var b in banners)
+        {
+            <div style="width:125:px; height:125px; float:left; margin-right:10px;">
+                <a href="@b.LinkBanner">
+                    <img src="~/Uploads/Banners/@b.BannerCampanha"
+                         title="@b.TituloCampanha" />
+                </a>">
+            </div>
+        }
+    </div>
+}
+<h1>Alex</h1>

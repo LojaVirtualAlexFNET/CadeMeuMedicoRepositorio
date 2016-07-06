@@ -56,7 +56,7 @@ namespace ClinicaMVC.Controllers
             ViewBag.IDEspecialidade = new SelectList(banco.Especialidades, "IDEspecialidade", "Nome", medico.IDEspecialidade);
             return View(medico);
         }
-        public ActionResult Editar(int id)
+        public ActionResult Excluir(int id)
         {
 
             return View();

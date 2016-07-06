@@ -29,5 +29,6 @@ namespace ClinicaMVC.Models
         public virtual DbSet<Especialidade> Especialidades { get; set; }
         public virtual DbSet<Medico> Medicos { get; set; }
         public virtual DbSet<Usuario> Usuarios { get; set; }
+        public virtual DbSet<BannersPublicitarios> BannersPublicitarios { get; set; }
     }
 }
